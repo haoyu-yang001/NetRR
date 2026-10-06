@@ -1,0 +1,29 @@
+Package: NetRR
+Title: Design of Networked Experiments via Interference Balancing
+Version: 1.0.0
+Authors@R: c(
+    person("Haoyu", "Yang", email = "haoyuyang@hsph.harvard.edu", role = c("aut", "cre")),
+    person("Yichen", "Qin", email = "qinyn@ucmail.uc.edu", role = "aut"),
+    person("Yan", "Yu", role = "aut"),
+    person("Yang", "Li", email = "yang.li@ruc.edu.cn", role = "aut")
+  )
+Description: Randomization designs for estimating the direct treatment effect
+    in experiments on a network, where a unit's outcome also depends on how
+    many of its neighbours are treated. Network interference balancing
+    rerandomization (NetRR) only accepts complete randomizations whose
+    treated and control groups have similar interference, measured by a
+    Mahalanobis distance. Network maximized matching randomization (NetMM)
+    searches for an assignment with as many treated-control pairs of
+    identical interference as possible. Neighbours can be split into groups
+    with different peer effects, and extra covariates can be balanced
+    jointly. Difference-in-means, regression and matched-pair estimators of
+    the direct effect are included. See Yang, Qin, Yu and Li (2026)
+    <doi:10.1080/07350015.2026.2658067>.
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: stats
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
